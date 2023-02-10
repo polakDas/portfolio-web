@@ -42,7 +42,7 @@ LOCALE_PATHS = [str(BASE_DIR / "locale")]
 DATABASES = {
     "default": env.db(
         "DATABASE_URL",
-        default="postgres:///my_site",
+        default="postgres:///my_portfolio",  # 'postgres://user:pass@url/database_name'
     ),
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
