@@ -9,8 +9,8 @@ class Diary(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
-        verbose_name = "Diary"
-        verbose_name_plural = "Diaries"
+        verbose_name = "My Diary"
+        verbose_name_plural = "My Diaries"
 
     def __str__(self):
         return self.title
