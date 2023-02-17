@@ -8,7 +8,7 @@ from .serializers import DiarySerializer
 
 # Create your views here.
 class DiaryAPIList(generics.ListCreateAPIView):
-    queryset = Diary.objects.all()
+    queryset = Diary.objects.order_by("created_at")
     serializer_class = DiarySerializer
 
 
