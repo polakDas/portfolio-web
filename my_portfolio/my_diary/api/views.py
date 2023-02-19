@@ -21,8 +21,8 @@ class DiaryViewSet(
     GenericViewSet,
 ):
     serializer_class = DiaryListSerializer
-    queryset = Diary.objects.all()
-    lookup_field = "pk"
+    queryset = Diary.objects.order_by("created_at")
+    # lookup_field = "pk"
 
 
 class DiaryListCreateAPIView(generics.ListCreateAPIView):
